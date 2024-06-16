@@ -1,11 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace GlobalProduct.ProductJSON
+namespace GlobalProduct.ExternalProducts
 {
-    public class Image
+    public class ExternalImage
     {
-        public int ID { get; set; }
-
         [JsonPropertyName("id")]
         public long Id2 { get; set; }
 

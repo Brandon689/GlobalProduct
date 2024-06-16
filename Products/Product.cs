@@ -1,12 +1,12 @@
-﻿namespace GlobalProduct.Product
+﻿namespace GlobalProduct.Products
 {
     public class Product
     {
-        public int ID { get; set; }
-
-        public long? Id2 { get; set; }
+        public long? Id { get; set; }
 
         public string? Title { get; set; }
+
+        public string? Sku { get; set; }
 
         public string? BodyHtml { get; set; }
 
@@ -16,7 +16,7 @@
 
         public DateTime? CreatedAt { get; set; }
 
-        public string Handle { get; set; }
+        public string? Handle { get; set; }
 
         public DateTime? UpdatedAt { get; set; }
 
@@ -34,25 +34,16 @@
 
         public List<Image>? Images { get; set; }
 
-        //[JsonPropertyName("image")]
         //public Image? Image { get; set; }
-
-        //added
-        public string Currency { get; set; }
-
-        //public long AliExpressId { get; set; }
-        public string Url { get; set; }
-
-        public double? averageStar { get; set; }
-        public int? feedbacks { get; set; }
-
-        public int? wishListCount { get; set; }
-
-        public double? averageStarRate { get; set; }
-        public string sales { get; set; }
 
         public Shop Shop { get; set; }
 
         public Channel Channel { get; set; }
+
+
+
+
+        //
+        public bool Single() => this?.Variants?.Count == 1;
     }
 }

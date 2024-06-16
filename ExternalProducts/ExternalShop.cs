@@ -1,11 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace GlobalProduct.ProductJSON
+namespace GlobalProduct.ExternalProducts
 {
-    public class Shop
+    public class ExternalShop
     {
-        public int ID { get; set; }
-
         [JsonPropertyName("url")]
         public string? Url { get; set; }
 

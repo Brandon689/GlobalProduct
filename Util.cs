@@ -4,14 +4,14 @@
     {
         public static string GetImagePath(string imageUrl)
         {
-            Uri uri = new Uri(imageUrl);
+            Uri uri = new(imageUrl);
             string[] segments = uri.Segments;
             return segments[^1].TrimEnd('/');
         }
 
         public static string GetAltImagePath(string imageUrl)
         {
-            Uri uri = new Uri(imageUrl);
+            Uri uri = new(imageUrl);
             string[] segments = uri.Segments;
             string end = segments[^1];
             return segments[^2].TrimEnd('/') + end[end.IndexOf('.')..];

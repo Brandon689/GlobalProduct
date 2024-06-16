@@ -2,9 +2,7 @@
 {
     public class UIVariant
     {
-        public int ID { get; set; }
-
-        public long Id2 { get; set; }
+        public long Id { get; set; }
 
         public string? Title { get; set; }
 

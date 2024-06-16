@@ -1,12 +1,10 @@
-﻿namespace GlobalProduct.Product
+﻿namespace GlobalProduct.Products
 {
     public class Option
     {
-        public int ID { get; set; }
+        public long? Id { get; set; }
 
-        public long? Id2 { get; set; }
-
-        public long ProductId2 { get; set; }
+        public long ProductId { get; set; }
 
         public string? Name { get; set; }
 

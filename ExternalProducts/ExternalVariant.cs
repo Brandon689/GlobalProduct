@@ -1,16 +1,14 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace GlobalProduct.ProductJSON
+namespace GlobalProduct.ExternalProducts
 {
-    public class Variant
+    public class ExternalVariant
     {
-        public int ID { get; set; }
-
         [JsonPropertyName("id")]
-        public long Id2 { get; set; }
+        public long Id { get; set; }
 
         [JsonPropertyName("product_id")]
-        public long ProductId2 { get; set; }
+        public long ProductId { get; set; }
 
         [JsonPropertyName("title")]
         public string? Title { get; set; }

@@ -1,12 +1,10 @@
-﻿namespace GlobalProduct.Product
+﻿namespace GlobalProduct.Products
 {
     public class Image
     {
-        public int ID { get; set; }
+        public long Id { get; set; }
 
-        public long Id2 { get; set; }
-
-        public long ProductId2 { get; set; }
+        public long ProductId { get; set; }
 
         public int? Position { get; set; }
 
